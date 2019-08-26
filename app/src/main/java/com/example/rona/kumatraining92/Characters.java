@@ -2,16 +2,14 @@ package com.example.rona.kumatraining92;
 
 public class Characters
 {
-    private String name, role,age,level;
+    private String name,role,age;
     private int pic;
 
-    public Characters(String name, String role, String age, int pic,String level){
-
+    public Characters(String name, String role, String age, int pic){
         this.name = name;
         this.role = role;
         this.age = age;
         this.pic = pic;
-        this.level = level;
     }
 
     public String getName() {
@@ -36,14 +34,6 @@ public class Characters
 
     public void setAge(String age) {
         this.age = age;
-    }
-
-    public String getLevel() {
-        return level;
-    }
-
-    public void setLevel(String level) {
-        this.level = level;
     }
 
     public int getPic() {

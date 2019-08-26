@@ -17,61 +17,65 @@ public class Beartivity extends AppCompatActivity {
     private List<Characters> charList;
     private BearHands bearAdapt;
 
-    String[] names = {
-            "Yuna",
-            "Fina",
-            "Hugging Bear",
-            "Swaying Bear",
-            "Shuri",
-            "Noire Foschuroze",
-            "Flora",
-            "Shia"
+    String[] role = {
+            "Sam",
+            "Facebook",
+            "Google +",
+            "Twitter",
+            "Pinterest Weekly",
+            "Josh",
+            "Test",
+            "Test",
+            "Test",
+            "Test",
+            "Test",
+            "Test"
     };
 
+    String[] name = {
+            "Weekend Adventure",
+            "Yuna, You have 1 Notification",
+            "Top Suggested Google + Pages for you",
+            "Follow T-Mobile,Samsung Mobile U",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum"
+    };
     String[] ages = {
-            "15",
-            "10",
-            "1",
-            "1",
-            "9",
-            "9",
-            "7",
-            "15"
+            "Weekend Adventure",
+            "Yuna, You have 1 Notification",
+            "Top Suggested Google + Pages for you",
+            "Follow T-Mobile,Samsung Mobile U",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum",
+            "Lorem Ipsum"
     };
 
     int[] picture = {
-            R.drawable.yuna,
-            R.drawable.fina,
-            R.drawable.kumakyuu,
-            R.drawable.kumayuru,
-            R.drawable.shuuri,
-            R.drawable.noire,
-            R.drawable.flora,
-            R.drawable.shia
+            R.drawable.s,
+            R.drawable.f,
+            R.drawable.g,
+            R.drawable.t,
+            R.drawable.p,
+            R.drawable.j,
+            R.drawable.tb,
+            R.drawable.tb,
+            R.drawable.tb,
+            R.drawable.tb,
+            R.drawable.tb,
+            R.drawable.tb,
     };
 
-    String[] role = {
-            "The Bear",
-            "Yuna's Waifu",
-            "Bear",
-            "Bear",
-            "Cute Little Rascal",
-            "Bear Lover",
-            "The Princess",
-            "Twin Drills"
-
-
-    };
-    String[] level = {
-            "∞",
-            "99",
-            "100",
-            "100",
-            "70",
-            "95",
-            "90",
-            "70"
-    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,8 +92,8 @@ public class Beartivity extends AppCompatActivity {
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
         charList = new ArrayList<>();
-        for (int i = 0; i < names.length; i++) {
-            Characters chars = new Characters(names[i],role [i], ages[i], picture[i],level[i]);
+        for (int i = 0; i < role.length; i++) {
+            Characters chars = new Characters(name[i],role [i], ages[i], picture[i]);
             charList.add(chars);
         }
 
