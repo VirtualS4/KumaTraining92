@@ -4,78 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FFFFFF"
-    tools:context=".CharacterList">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:orientation="horizontal">
+    android:background="#EEEEEE"
+    android:padding="10dp"
+    tools:context=".Kuma.RecyclerView.CharacterList">
 
         <ImageView
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
             android:id="@+id/picture"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:src="@drawable/kkkbear" />
-
-
-    <LinearLayout
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#FFFFFF">
+            android:src="@drawable/f" />
 
     <TextView
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/picture"
         android:id="@+id/role"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="The Bear"
         android:gravity="left"
         android:textStyle="bold"
-        android:textSize="12sp"/>
+        android:textSize="14sp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Yuna"
-            android:textStyle="bold"
-            android:textSize="11sp"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/role"
+        android:layout_toRightOf="@id/picture"
+        android:text="Yuna"
+        android:textSize="12sp"
+        android:textStyle="bold" />
 
-    </LinearLayout>
-
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:orientation="horizontal"
-    android:layout_height="wrap_content">
     <TextView
         android:id="@+id/age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/picture"
         android:text="15"
-        android:textSize="10sp"/>
+        android:textSize="11sp" />
 
-    </LinearLayout>
-    </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
             <TextView
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
+                android:id="@+id/tv_waktu"
                 android:text="10:12pm"/>
+
             <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
+                android:layout_below="@id/tv_waktu"
+                android:layout_alignParentRight="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:src="@drawable/ic_star_black_24dp"
                 android:layout_gravity="right"/>
-        </LinearLayout>
-    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/age"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        />
 </RelativeLayout>

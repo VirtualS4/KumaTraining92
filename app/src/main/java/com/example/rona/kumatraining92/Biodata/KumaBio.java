@@ -1,9 +1,11 @@
-package com.example.rona.kumatraining92;
+package com.example.rona.kumatraining92.Biodata;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Beartivity2 extends AppCompatActivity {
+import com.example.rona.kumatraining92.R;
+
+public class KumaBio extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

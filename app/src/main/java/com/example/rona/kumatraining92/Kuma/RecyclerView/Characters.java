@@ -1,15 +1,15 @@
-package com.example.rona.kumatraining92;
+package com.example.rona.kumatraining92.Kuma.RecyclerView;
 
-public class Characters
-{
-    private String name,role,age;
+public class Characters {
+    private String name, role, age, time;
     private int pic;
 
-    public Characters(String name, String role, String age, int pic){
+    public Characters(String name, String role, String age, int pic, String time) {
         this.name = name;
         this.role = role;
         this.age = age;
         this.pic = pic;
+        this.time = time;
     }
 
     public String getName() {
@@ -42,5 +42,13 @@ public class Characters
 
     public void setPic(int pic) {
         this.pic = pic;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }

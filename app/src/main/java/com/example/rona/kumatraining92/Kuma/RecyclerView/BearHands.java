@@ -1,4 +1,4 @@
-package com.example.rona.kumatraining92;
+package com.example.rona.kumatraining92.Kuma.RecyclerView;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,15 +7,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.rona.kumatraining92.R;
+
 import java.util.List;
 
 public class BearHands extends RecyclerView.Adapter<BearHands.ViewHolder> {
     private List<Characters> Candies;
 
-
-
     public static class ViewHolder extends RecyclerView.ViewHolder{
-        public TextView vname,vage,vrole;
+        public TextView vname,vage,vrole,vtime;
         public ImageView imvpicture;
         public ViewHolder(View v){
             super(v);
@@ -23,6 +23,7 @@ public class BearHands extends RecyclerView.Adapter<BearHands.ViewHolder> {
             vage = v.findViewById(R.id.age);
             vrole = v.findViewById(R.id.role);
             imvpicture = v.findViewById(R.id.picture);
+            vtime = v.findViewById(R.id.tv_waktu);
         }
     }
 
@@ -46,6 +47,7 @@ public class BearHands extends RecyclerView.Adapter<BearHands.ViewHolder> {
         holder.vrole.setText(song.getRole());
         holder.vage.setText(song.getAge());
         holder.imvpicture.setImageResource(song.getPic());
+        holder.vtime.setText(song.getTime());
     }
 
     @Override

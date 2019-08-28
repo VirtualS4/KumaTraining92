@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center|top"
     android:background="@color/blue"
-    tools:context=".Beartivity2">
+    tools:context=".Biodata.KumaBio">
 
     <ImageView
         android:layout_marginTop="40dp"

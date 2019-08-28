@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Biodata.KumoBio">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/iv_myself"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/kumobiopic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_myself"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_light"
+        android:text="Alvaro Dwi Oktaviano"
+        android:textStyle="bold"
+        android:id="@+id/tv_bio_name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bio_name"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_light"
+        android:text="XII - RPL 1"
+        android:id="@+id/tv_bio_class"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_detail"
+        android:elevation="5dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="20dp"
+        android:layout_below="@id/tv_bio_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTACT DETAIL"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:id="@+id/tv_bio_detail_label"
+                />
+
+            <GridLayout
+                android:padding="5dp"
+                android:background="@color/white"
+                android:useDefaultMargins="true"
+                android:layout_below="@id/tv_bio_detail_label"
+                android:layout_width="match_parent"
+                android:columnCount="2"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="Email"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_columnWeight="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="varoalvaro493@gmail.com"
+                    android:fontFamily="@font/open_sans_light"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="Whatsapp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_columnWeight="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+62 813-2490-4522"
+                    android:fontFamily="@font/open_sans_light"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="Telegram"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_columnWeight="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" @alvarodwi"
+                    android:fontFamily="@font/open_sans_light"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="Home Address"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_columnWeight="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Antapani Tengah,Bandung - 40291"
+                    android:fontFamily="@font/open_sans_light"
+                    />
+
+            </GridLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
