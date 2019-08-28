@@ -9,7 +9,7 @@ Tim 2 :
 
         Zhofron Al-Fajr Gunarko Putra [33] - Recycler View
         
-*Karena deadline tanggal 4 September, bagian biodata dan cardview masih belum selesai
+*Karena deadline tanggal 4 September, design kami belum final (tinggal home sih)
         
 ## ABOUT
 
